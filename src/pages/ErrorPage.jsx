@@ -1,0 +1,6 @@
+export default function ErrorPage() {
+    return <div>
+        <h1>404 - Not Found</h1>
+        <p>Something went wrong</p>
+    </div>
+}
