@@ -6,6 +6,7 @@ import ProductDetail from "../pages/ProductDetail";
 import Cart from "../pages/Cart";
 import { getProductById, getProducts } from "../api/products";
 import LoginPage from "../pages/LoginPage";
+import RegisterPage from "../pages/RegisterPage";
 
 const router = createBrowserRouter([
   {
@@ -30,12 +31,16 @@ const router = createBrowserRouter([
         path: "*",
         element: <ErrorPage />,
       },
+      {
+        path: "/login",
+        element: <LoginPage />
+      },
+      {
+        path: "/register",
+        element: <RegisterPage />
+      }
     ],
   },
-  {
-    path: "/login",
-    element: <LoginPage />
-  }
 ], {basename: "/app-hook-form/"});
 
 export default router;
